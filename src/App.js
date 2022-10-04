@@ -1,10 +1,10 @@
-import UseCustomHook from "./components/UseCustomHook";
+import FetchAxios from "./components/FetchAxios";
 const App = () => {
   
     
     return (
         <div>
-           <UseCustomHook/>
+           <FetchAxios/>
         </div>
     )
 }
