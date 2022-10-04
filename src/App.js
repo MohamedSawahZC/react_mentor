@@ -1,10 +1,10 @@
-import UseMemoExample from "./components/UseMemoExample";
+import UseReducerExample from "./components/UseReducerExample";
 const App = () => {
   
     
     return (
         <div>
-           <UseMemoExample/>
+           <UseReducerExample/>
         </div>
     )
 }
