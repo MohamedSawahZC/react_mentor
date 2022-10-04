@@ -1,15 +1,10 @@
-import { useContext } from "react";
-import {UseContextProvider} from "./components/UseContextExample";
-import { ColorContext } from "./components/UseContextExample";
-import UseRefExample from "./components/UseRefExample";
+import UseMemoExample from "./components/UseMemoExample";
 const App = () => {
-    const {data} = useContext(ColorContext);
+  
     
     return (
         <div>
-           <UseContextProvider/>
-            {data}
-            <UseRefExample  />
+           <UseMemoExample/>
         </div>
     )
 }
