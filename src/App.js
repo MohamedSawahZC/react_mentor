@@ -1,10 +1,10 @@
-import UseReducerExample from "./components/UseReducerExample";
+import UseCustomHook from "./components/UseCustomHook";
 const App = () => {
   
     
     return (
         <div>
-           <UseReducerExample/>
+           <UseCustomHook/>
         </div>
     )
 }
