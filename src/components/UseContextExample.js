@@ -1,4 +1,4 @@
-import React,{createContext} from 'react'
+import React,{createContext,useState} from 'react'
 
 //1- Create Context
 const ColorContext = createContext();
@@ -6,9 +6,13 @@ const ColorContext = createContext();
 
 
  const UseContextProvider = ({children}) => {
+    const [data,setData]=useState('white');
+    const changeData = (color)=>{
+        setData(color)
+    }
   return (
     <div className='Main'>
-       <ColorContext.Provider value='white'>
+       <ColorContext.Provider value={{data,changeData}}>
         {children}
        </ColorContext.Provider>
     </div>

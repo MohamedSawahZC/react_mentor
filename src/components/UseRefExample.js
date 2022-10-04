@@ -1,17 +1,20 @@
-import React,{useRef} from 'react'
+import React,{useRef,useContext} from 'react'
+import { ColorContext } from './UseContextExample';
 
  const UseRefExample = () => {
   const valueInput = useRef(null);
   console.log(valueInput)
-  const focus = ()=>{
-    valueInput.current.focus();
-    console.log(valueInput.current.value)
+  const OnClickButton = ()=>{
+    changeData(valueInput.current.value)
   }
+
+  const {changeData} = useContext(ColorContext);
+
   return (
     <div className='Main'>
 
     <input type='text' ref={valueInput}></input>
-    <button onClick={focus} >Focus</button>
+    <button onClick={OnClickButton} >Focus</button>
     </div>
   )
 }

@@ -13,6 +13,7 @@ import React,{useState} from 'react'
    const textSet=(e)=>{
     setText(e.target.value)
    }
+   
   return (
     <div>
         <div>{count}</div>
